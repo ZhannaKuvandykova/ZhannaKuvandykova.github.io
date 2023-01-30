@@ -1,0 +1,35 @@
+#main-heading {
+	text-align: center;
+	color: #201fff;
+	text-transform: capitalize;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.banner{
+	height: 200px;
+	background-color: slateblue;
+	margin: 0;
+	padding: 0;
+	background-image: url("Shaqi_jrvej.jpg");
+}
+a:hover{
+	color: blue;
+	border: 1px gray;
+	padding: 5px;
+	background-color: lightgray;
+}
+a:visited {
+	font-style: italic;
+	color: slategray;
+}
+a.active{
+	font-weight: bold;
+	color: gray;
+}
+.menu li{
+	border:1px solid #555;
+	padding:10px;
+	width:100px;
+}
