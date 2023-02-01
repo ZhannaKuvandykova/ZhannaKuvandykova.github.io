@@ -13,11 +13,10 @@ body {
 
 .banner{
 	height: 200px;
+	background-color: slateblue;
 	margin: 0;
 	padding: 0;
 	background-image: url("background.jpg");
-	background-size: cover;
-	background-position: center;
 	color: white;
 }
 
@@ -36,24 +35,11 @@ a.active{
 	color: gray;
 }
 
-nav ul {
-	display: flex;
-	flex-direction: row;
-	list-style-type: none;
-	padding: 20px;
-	justify-content: space-evenly;
-}
-
-nav {
-	display: flex;
-	padding: 0;
-}
-
 .menu a{
 	margin:10px;
+	width:900px;
 	font-family:sans-serif;
 }
-
 .menu a{
 	display:block;
 	padding:3px;
@@ -62,19 +48,26 @@ nav {
 	color:#009;
 }
 .menu li{
-
 	border:1px solid #555;
 	padding:10px;
+	width:100px;
+	display:block;
+	float:left;
 	margin-left:2px;
 	border:1px solid #000;
 	text-decoration: solid;
 }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
   
   article {
-    padding: 10px;
-    width: 100%;
+    float: left;
+    padding: 150px;
+    width: 50%;
     background-color: #FFF0F5;
-    /*height: 550px;*/ 
+    height: 550px; 
   }
   
   section::after {
@@ -88,7 +81,6 @@ nav {
     padding: 10px;
     text-align: inherit;
     color: white;
-    width: 100% ;
   }
 
   
@@ -99,14 +91,18 @@ nav {
     }
   }
  
+nav {
+    
+    float:left;
+       
+}  
 .main_content{
-margin-left: 10%;
-margin-right: 10%;   
+        float:left;
+   
+      
 }
-
 aside {
    clear: both;
-   weigh: 100%;
 
    
 }
