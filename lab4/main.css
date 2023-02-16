@@ -1,0 +1,267 @@
+#main-heading {
+	text-align: center;
+	color: #FFB6C1;
+	text-transform: capitalize;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+	height: 10em;
+	margin: 0;
+	padding: 0;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+a:hover{
+	color: blue;
+	border: 0.005em gray;
+	padding: 0.025em;
+	background-color: lightgray;
+}
+a:visited {
+	font-style: italic;
+	color: slategray;
+}
+a.active{
+	font-weight: bold;
+	color: gray;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 1em;
+	justify-content: space-evenly;
+}
+
+nav {
+	font-size: 1em;
+	display: flex;
+	padding: 0;
+}
+
+.menu a{
+	margin:1em;
+	font-family:sans-serif;
+}
+
+.menu a{
+	display:block;
+	padding:0.015em;
+	text-decoration:solid;
+	backgroung-color:#E6EFA;
+	color:#009;
+}
+.menu li{
+
+	border:0.005em solid #555;
+	padding:0.05em;
+	margin-left:0.01em;
+	border:0.005em solid #000;
+	text-decoration: solid;
+}
+  
+  article {
+    padding: 0.05em;
+    width: 100%;
+    background-color: #FFF0F5;
+    /*height: 550px;*/ 
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer {
+    background-color: #F08080;
+    padding: 0.05em;
+    text-align: inherit;
+    color: white;
+    width: 100% ;
+  }
+
+  
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+    
+    nav ul {
+    flex-direction: column;
+    }
+
+    nav>ul>li {
+    	width: 70vw;
+    	background-color: white;
+    }
+  }
+ 
+.main_content{
+margin-left: 3%;
+margin-right: 3%;   
+}
+
+aside {
+	font-style: oblique;
+}
+
+footer {
+	color: white;
+	float: left;
+	width: 97.35%;
+	background-color: #FFB6C1;
+	margin-bottom: 0;
+	padding-top: 10px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+}
+
+.categories {
+	padding-top: 0;
+	margin-bottom: 0; 
+	margin-left: 30%;
+}
+
+.categories ul {
+	padding-top: 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.categories ul>li {
+	margin-top: 0.005em;
+	list-style-type: none;
+	border-left: 0. solid;
+	border-right: 0.005em solid;
+
+}
+
+.categories h5 {
+	margin-top: 0;
+	text-align: center;
+}
+
+.categories ul>li>a {
+	text-decoration: none;
+	color: #F0FFFF;
+}
+
+.categories ul>li>a:hover {
+	color: white;
+}
+
+.quick_links {
+	margin-left: 30%;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+.quick_links h5 {
+	margin-top: 0;
+	text-align: center;
+	margin-bottom: 0.05em;
+}
+
+.quick_links ul {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 0.05em;
+	margin-bottom: 0em;
+	margin-top: 0;
+}
+
+.quick_links ul>li {
+	list-style-type: none;
+	border-left: 0.005em solid;
+	border-right: 0.005em solid;
+}
+
+.quick_links ul>li>a {
+	text-decoration: none;
+	color: #F0FFFF;
+}
+
+.quick_links ul>li>a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.map {
+	display: inline-block;
+	padding-right: 0.05em;
+	float: left;
+}
+
+} 
+/* For mobile phones: */
+/*[class*="col-"] {
+  width: 100%;
+}*/
+
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  img {
+  width: 100%;
+  height: auto;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;float:left;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;float:left;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+ 
+}
+
+/* For width smaller than 400px: */
+body {
+  background-image: url('IMG_6423.jpg');
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  body {
+    background-image: url('Shaqi_jrbej.jpg');
+  }
+}
