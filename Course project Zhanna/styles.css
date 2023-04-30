@@ -1,0 +1,571 @@
+/* Index html */
+* { 
+	margin: 0; 
+	padding: 0; 
+	font-family: 'Trebuchet MS', sans-serif; 
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+.header {
+	position: relative;
+	width: 100%;
+	height: 190px;
+	background: linear-gradient(to bottom, #51B2A5, #94C1BB);
+
+}
+
+.header h1 {
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	position: absolute;
+	bottom: 10px;
+	color: white;
+	margin-left: 30%;
+}
+
+#more {
+	font-size: 22px;
+	text-align: center;
+	padding: 8px 0;
+	cursor: pointer;
+}
+
+#more:hover {
+	background-color: #EEE7BF;
+}
+
+.fixed {
+	position: fixed;
+	top: 55px;
+	left: 5%;
+	width: 240px;
+	height: 400px;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+}
+
+.profile_img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%; 
+	overflow: hidden;
+	z-index: 50;
+}
+
+.profile_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	background-position: top;
+	transform: scale(1.3);
+}
+
+.fixed nav {
+	width: 200px;
+	position: absolute;
+	top: 45%;
+	padding-top: 72px;
+	background-color: #D0C793;
+	border-radius: 10%;
+	overflow: hidden;
+}
+
+.fixed nav ul {
+	list-style: none;
+	text-align: left;
+
+}
+
+.fixed nav ul li {
+	padding: 9px 0;
+	font-size: 20px;
+	padding-left: 40px;
+}
+
+.fixed nav ul li:hover {
+	background-color: #EEE7BF;
+}
+
+.fixed nav a {
+	text-decoration: none;
+	color: black;
+}
+
+.main_content {
+	margin-left: 30%;
+	margin-right: 13%;
+}
+
+.header2 {
+	font-size: 35px;
+	font-weight: 600;
+	color: #929292;
+
+}
+.about_me h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about_me h2 {
+	font-size: 30px;
+	font-weight: 700;
+	color: #212020;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+
+.about_me p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.7;
+	margin-bottom: 70px;
+}
+
+.about_me h3 {
+	margin-bottom: 20px;
+}
+
+.about_me ul {
+	list-style: none;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+
+
+.languages h3 {
+	color: #434242;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.languages {
+	margin-bottom: 70px;
+}
+
+.languages h2 {
+	font-size: 25px;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+
+
+.main_content h3 small {
+	float: right;
+	color: #CBC17D;
+}
+
+progress {
+	width: 100%;
+	height: 5px;
+	background: #FB39A5;
+	margin-bottom: 20px;
+}
+
+progress::-webkit-progress-value { 
+	background: hsla(52, 43%, 64%, 1); 
+}
+
+progress::-webkit-progress-bar { 
+	background: #ccc; 
+}
+
+.edu_exp h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.educ h2 {
+	margin-top: 0;
+	font-size: 20px;
+	font-weight: 550;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.educ p {
+	margin-bottom: 0;
+}
+
+.edu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.educ {
+	display: flex;
+	width: 430px;
+	border: 4px solid hsla(52, 43%, 64%, 0.65);;
+	padding: 10px;
+}
+
+.edu img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.exp_timeline {
+	border-left: 3px solid hsla(52, 43%, 64%, 0.65);
+	padding-left: 30px; 
+	padding-top: 20px;
+	padding-bottom: 5px;
+	margin-bottom: 50px;
+}
+
+.job {
+	margin-bottom: 30px;
+	border: 4px solid hsla(52, 43%, 64%, 0.65);
+	border-radius: 5%;
+	padding: 5px 10px;
+	position: relative;
+}
+
+.job_title {
+	line-height: 1.5;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.job_title h2 {
+	width: 290px;
+}
+
+.job h4 {
+	margin-bottom: 5px;
+}
+
+.job:before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #5C583B;
+	border: 3px solid hsla(52, 43%, 64%, 0.65);
+	left: -42px;
+	top: 20px;
+}
+
+.job:after {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 2px;
+	background-color: hsla(52, 43%, 64%, 0.65);
+	top: 27px;
+	left: -27px;
+}
+
+
+.footer {
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #51B2A5, #94C1BB);
+	position: absolute;
+}
+
+.footer_info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.f_left h4{
+	color: white;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+	grid-column: 1;
+	padding: 20px 10px 10px 20px;
+	display: flex;
+	font-weight: 100;
+}
+
+.f_right {
+	padding: 20px 20px 0 20px;
+}
+
+.f_right ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.f_right li {
+	display: flex;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.f_right h4 {
+	margin-left: 5px;
+	font-weight: 100;
+	color: white;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills page */
+
+.skills_container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.skill {
+	height: 300px;
+	position: relative;
+	padding: 20px;
+	flex-grow: 1;
+	min-width: 350px;
+	margin-right: 10px; 
+	margin-bottom: 20px;
+	animation-name: zoom-reverse;
+	animation-duration: 0.3s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+
+}
+
+.skill:hover {
+	animation-name: zoom;
+	animation-direction: 0.3s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoom-reverse {
+	from {
+		transform: scale(1.05);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.05);
+	}
+}
+
+.skill:last-child {
+	height: 300px;
+	position: relative;
+	padding: 20px;
+	flex-grow: 1;
+	margin-right: 0;
+}
+
+.skill_l {
+	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("images/coursework.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.skill_r {
+	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("images/lab.jpeg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.skill h1 {
+	margin-bottom: 80px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skill ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 10px; 
+
+}
+
+.skill li {
+	padding: 5px;
+	border: 2px solid #A5FB39;
+	border-radius: 30%;
+	color: white;
+	font-size: 15px;
+}
+
+.skill_r li {
+	margin-right: 5px;
+}
+
+/*Certificates page */
+
+.about_me img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.pdf {
+	font-size: 20px;
+	margin-bottom: 30px;
+	padding: 5px;
+	background-color: hsla(52, 43%, 64%, 0.65);
+	border: 0;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 420px) and (max-width: 1024px)  {
+
+	body {
+		position: relative;
+	}
+
+	.header h1 {
+		font-weight: 600;
+		font-size: 45px;
+		position: absolute;
+		top: 370px;
+		color: black;
+		margin: 0 10% 0 10%;
+		text-align: center;
+		
+	}
+
+	.fixed {
+		position: absolute;
+		top: 55px;
+		left: 36%;
+		width: 240px;
+		height: 400px;
+		z-index: 100;
+		display: flex;
+		justify-content: center;
+	}
+
+	.main_content {
+		margin-top: 230px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.educ {
+		margin-bottom: 10px;
+	}
+
+	.header2 {
+		padding-top: 50px;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	.skill li {
+		font-size: 15px;
+	}
+
+	.skill {
+		min-width: 400px;
+	}
+
+	.footer {
+		height: 115px;
+	}
+
+	.f_left h4 {
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width: 420px) {
+
+	body {
+		position: relative;
+	}
+
+	.header h1 {
+		font-weight: 600;
+		font-size: 30px;
+		position: absolute;
+		top: 370px;
+		color: black;
+		margin: 0 10% 0 10%;
+		text-align: center;
+		
+	}
+
+	.fixed {
+		position: absolute;
+		top: 55px;
+		left: 19.5%;
+		width: 240px;
+		height: 400px;
+		z-index: 100;
+		display: flex;
+		justify-content: center;
+	}
+
+	.main_content {
+		margin-top: 250px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.header2 {
+		text-align: center;
+		font-size: 25px;
+		font-weight: 500;
+		padding-top: 0;
+	}
+
+	.skill li {
+		font-size: 12px;
+	}
+
+	.educ {
+		margin-bottom: 10px;
+	}
+
+	.f_left h4 {
+		font-size: 11px;
+	}
+
+	.f_right h4 {
+		font-size: 14px;
+	}
+
+	.footer {
+		height: 135px;
+	}
+
+	.pdf {
+		font-size: 15px;
+		margin-bottom: 30px;
+		padding: 5px;
+	}
+}
